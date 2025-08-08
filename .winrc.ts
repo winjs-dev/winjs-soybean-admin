@@ -95,6 +95,14 @@ export default defineConfig({
     }
   },
   autoImport: {
+    unImports: {
+      imports: ["vue", "vue-router", "vue/macros"],
+      dirs: ["src/stores"],
+      vueTemplate: true,
+      eslintrc: {
+        enabled: true
+      }
+    },
     unComponents: {
       resolvers: [
         NaiveUiResolver(),
