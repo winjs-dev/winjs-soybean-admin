@@ -23,7 +23,7 @@
   "dependencies": {
     "@winner-fed/cloud-utils": "^2.0.1",
     "@winner-fed/magicless": "*",
-    "@winner-fed/winjs": "0.16.12",
+    "@winner-fed/winjs": "0.16.13",
     "@better-scroll/core": "2.5.1",
     "@iconify/vue": "5.0.0",
     "@sa/axios": "workspace:*",

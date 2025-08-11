@@ -1,4 +1,5 @@
 /node_modules
+/packages/*/node_modules
 /.env.local
 /.winrc.local.ts
 /config/config.local.ts
