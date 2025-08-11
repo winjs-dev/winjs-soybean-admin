@@ -2,6 +2,9 @@
 @import './nprogress.css';
 @import './transition.css';
 
+/* 为 vite 或 rsbuild 服务 */
+@unocss all;
+
 html,
 body,
 #app {

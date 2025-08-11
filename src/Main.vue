@@ -2,9 +2,9 @@
 import { computed } from 'vue';
 import { NConfigProvider, darkTheme } from 'naive-ui';
 import type { WatermarkProps } from 'naive-ui';
-import { useAppStore } from '@/store/modules/app';
-import { useThemeStore } from '@/store/modules/theme';
-import { useAuthStore } from '@/store/modules/auth';
+import { useAppStore } from '@/stores/modules/app';
+import { useThemeStore } from '@/stores/modules/theme';
+import { useAuthStore } from '@/stores/modules/auth';
 import { naiveDateLocales, naiveLocales } from '@/locales/naive';
 
 defineOptions({

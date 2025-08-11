@@ -2,8 +2,8 @@
 import { computed, ref, shallowRef } from 'vue';
 import { useRouter } from 'vue-router';
 import { onKeyStroke, useDebounceFn } from '@vueuse/core';
-import { useRouteStore } from '@/store/modules/route';
-import { useAppStore } from '@/store/modules/app';
+import { useRouteStore } from '@/stores/modules/route';
+import { useAppStore } from '@/stores/modules/app';
 import { $t } from '@/locales';
 import SearchResult from './search-result.vue';
 import SearchFooter from './search-footer.vue';

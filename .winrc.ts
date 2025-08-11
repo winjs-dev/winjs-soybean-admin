@@ -1,4 +1,5 @@
-import path from 'node:path';
+// http://172.27.24.2:7788/winjs-document/config/config.html
+import path from 'path';
 import { defineConfig } from '@winner-fed/winjs';
 import { NaiveUiResolver } from 'unplugin-vue-components/resolvers';
 import { FileSystemIconLoader } from 'unplugin-icons/loaders';
@@ -11,11 +12,12 @@ const localIconPath = path.join(process.cwd(), 'src/icons');
 
 export default defineConfig({
   npmClient: 'pnpm',
-  plugins: ['@winner-fed/plugin-unocss', '@winner-fed/plugin-unicons'],
+  plugins: ['@winner-fed/plugin-pinia', '@winner-fed/plugin-unocss', '@winner-fed/plugin-unicons'],
+  pinia: {},
   /**
    * @name appConfig 配置
    * @description 可以配置前端工程运行的配置文件 `config.local.js` 里内容。
-   * @doc https://winjs-dev.github.io/winjs-docs/config/config.html#appconfig
+   * @doc http://172.27.24.2:7788/winjs-document/config/config.html#appconfig
    */
   appConfig: false,
   unocss: {},
@@ -32,7 +34,7 @@ export default defineConfig({
   /**
    * @name banner 配置
    * @description 为构建的静态资源（JS、CSS 文件）的头部或尾部注入内容的能力。
-   * @doc https://winjs-dev.github.io/winjs-docs/config/config.html#banner
+   * @doc http://172.27.24.2:7788/winjs-document/config/config.html#banner
    */
   banner: true,
   targets: { chrome: 51, firefox: 54, safari: 10, edge: 15 },
@@ -61,7 +63,9 @@ export default defineConfig({
       }
     }
   },
-  // 使用系统原有路由实现
+  // mfsu: false,
+  // rsbuild: {},
+  // vite: {},
   routes: [],
   define: {
     BUILD_TIME: JSON.stringify(getBuildTime()),
@@ -96,12 +100,7 @@ export default defineConfig({
   },
   autoImport: {
     unImports: {
-      imports: ["vue", "vue-router", "vue/macros"],
-      dirs: ["src/stores"],
-      vueTemplate: true,
-      eslintrc: {
-        enabled: true
-      }
+      dirs: ['src/stores/modules/**']
     },
     unComponents: {
       resolvers: [

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { useAppStore } from '@/store/modules/app';
+import { useAppStore } from '@/stores/modules/app';
 import { $t } from '@/locales';
 
 defineOptions({

@@ -4,9 +4,9 @@ import { useRoute } from 'vue-router';
 import type { RouteKey } from '@elegant-router/types';
 import { SimpleScrollbar } from '@sa/materials';
 import { GLOBAL_HEADER_MENU_ID, GLOBAL_SIDER_MENU_ID } from '@/constants/app';
-import { useAppStore } from '@/store/modules/app';
-import { useThemeStore } from '@/store/modules/theme';
-import { useRouteStore } from '@/store/modules/route';
+import { useAppStore } from '@/stores/modules/app';
+import { useThemeStore } from '@/stores/modules/theme';
+import { useRouteStore } from '@/stores/modules/route';
 import { useRouterPush } from '@/hooks/common/router';
 import { useMenu, useMixMenuContext } from '../../../context';
 

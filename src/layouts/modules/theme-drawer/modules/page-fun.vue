@@ -6,7 +6,7 @@ import {
   themeScrollModeOptions,
   themeTabModeOptions
 } from '@/constants/app';
-import { useThemeStore } from '@/store/modules/theme';
+import { useThemeStore } from '@/stores/modules/theme';
 import { translateOptions } from '@/utils/common';
 import { $t } from '@/locales';
 import SettingItem from '../components/setting-item.vue';

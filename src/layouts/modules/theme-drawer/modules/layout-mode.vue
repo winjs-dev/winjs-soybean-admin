@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { useAppStore } from '@/store/modules/app';
-import { useThemeStore } from '@/store/modules/theme';
+import { useAppStore } from '@/stores/modules/app';
+import { useThemeStore } from '@/stores/modules/theme';
 import { $t } from '@/locales';
 import LayoutModeCard from '../components/layout-mode-card.vue';
 import SettingItem from '../components/setting-item.vue';

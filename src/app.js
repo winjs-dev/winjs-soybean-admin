@@ -1,7 +1,7 @@
 import './plugins/assets';
 import { setupAppVersionNotification, setupDayjs, setupLoading, setupNProgress } from './plugins';
 import { setupI18n } from './locales';
-import { setupStore } from './store';
+import './stores';
 import { setupRouter, router } from './router';
 
 import Main from './Main.vue';
@@ -19,8 +19,6 @@ export function render (oldRender) {
 
 
 export async function onAppCreated ({ app }) {
-  setupStore(app);
-
   await setupRouter(app);
 }
 

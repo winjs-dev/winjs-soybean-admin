@@ -6,8 +6,8 @@ import type {
   Router
 } from 'vue-router';
 import type { RouteKey, RoutePath } from '@elegant-router/types';
-import { useAuthStore } from '@/store/modules/auth';
-import { useRouteStore } from '@/store/modules/route';
+import { useAuthStore } from '@/stores/modules/auth';
+import { useRouteStore } from '@/stores/modules/route';
 import { localStg } from '@/utils/storage';
 import { getRouteName } from '@/router/elegant/transform';
 

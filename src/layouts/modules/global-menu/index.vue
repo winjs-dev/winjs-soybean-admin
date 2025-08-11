@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import type { Component } from 'vue';
-import { useAppStore } from '@/store/modules/app';
-import { useThemeStore } from '@/store/modules/theme';
+import { useAppStore } from '@/stores/modules/app';
+import { useThemeStore } from '@/stores/modules/theme';
 import VerticalMenu from './modules/vertical-menu.vue';
 import VerticalMixMenu from './modules/vertical-mix-menu.vue';
 import HorizontalMenu from './modules/horizontal-menu.vue';

@@ -3,7 +3,7 @@ import type { Ref } from 'vue';
 import type { PaginationProps } from 'naive-ui';
 import { jsonClone } from '@sa/utils';
 import { useBoolean, useHookTable } from '@sa/hooks';
-import { useAppStore } from '@/store/modules/app';
+import { useAppStore } from '@/stores/modules/app';
 import { $t } from '@/locales';
 
 type TableData = NaiveUI.TableData;

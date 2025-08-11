@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { computed } from 'vue';
-import { useAppStore } from '@/store/modules/app';
-import { useAuthStore } from '@/store/modules/auth';
+import { useAppStore } from '@/stores/modules/app';
+import { useAuthStore } from '@/stores/modules/auth';
 import { $t } from '@/locales';
 
 defineOptions({

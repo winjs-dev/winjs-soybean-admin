@@ -1,4 +1,4 @@
-import { useAuthStore } from '@/store/modules/auth';
+import { useAuthStore } from '@/stores/modules/auth';
 import { localStg } from '@/utils/storage';
 import { fetchRefreshToken } from '../api';
 import type { RequestInstanceState } from './type';

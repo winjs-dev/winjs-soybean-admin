@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { computed } from 'vue';
 import { LAYOUT_SCROLL_EL_ID } from '@sa/materials';
-import { useAppStore } from '@/store/modules/app';
-import { useThemeStore } from '@/store/modules/theme';
-import { useRouteStore } from '@/store/modules/route';
-import { useTabStore } from '@/store/modules/tab';
+import { useAppStore } from '@/stores/modules/app';
+import { useThemeStore } from '@/stores/modules/theme';
+import { useRouteStore } from '@/stores/modules/route';
+import { useTabStore } from '@/stores/modules/tab';
 
 defineOptions({
   name: 'GlobalContent'
